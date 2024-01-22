@@ -12,6 +12,26 @@
     text-align: center;
     padding: 10px 15px;
   }
+header{
+  list-style: none;
+  margin: 0px;
+  justify-content: center;
+  display: flex;
+  font-weight: bolder;
+  overflow: hidden;
+  margin-bottom: 5px;
+  border-bottom: 2px solid black;
+  text-align: center;
+  line-height: 0px;
+  height: auto;
+}
+
+ul{
+    list-style: none;
+    text-align: center;
+   
+
+}
 
   h1 {
     text-align: center;
@@ -29,7 +49,7 @@
   }
   .logo {
     
-    width: 250px;
+    width: 200px;
     align-items: center;
   }
 
