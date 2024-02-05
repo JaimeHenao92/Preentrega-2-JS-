@@ -2,6 +2,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    
   }
   
   html {
@@ -10,13 +11,16 @@
   
   body {
     text-align: center;
+    margin: 0;
     padding: 10px 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
   }
 header{
   list-style: none;
   margin: 0px;
   justify-content: center;
   display: flex;
+  align-items: center;
   font-weight: bolder;
   overflow: hidden;
   margin-bottom: 5px;
@@ -26,9 +30,74 @@ header{
   height: auto;
 }
 
+
+#cuenta-carrito{
+  background-color: rgba(199, 135, 52, 0.459);
+  display: inline-block;
+  width: 20px;
+  line-height: 20px;
+  border-radius: 90%;
+}
+
+
+
+#tabla-carrito {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#tabla-carrito th, #tabla-carrito td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#tabla-carrito th {
+  text-align: center;
+}
+
+.btn-disminuir, .btn-aumentar {
+  padding: 4px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-disminuir {
+  margin-right: 8px;
+}
+
+#contenido-carrito table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+#contenido-carrito th, #contenido-carrito td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+#contenido-carrito th {
+  background-color: #f2f2f2;
+}
+
+#pagar-btn {
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#pagar-btn:hover {
+  background-color: #45a049;
+}
 ul{
     list-style: none;
     text-align: center;
+    display: flex;
    
 
 }
@@ -53,10 +122,14 @@ ul{
     align-items: center;
   }
 
-  ol {
-    margin: 0px;
-    padding-left: 50px;
+  a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(37, 114, 48);
+    display: inline-block;
+    font-weight: bolder;
   }
+
   li {
     text-align: center;
     margin:  20px;
@@ -67,9 +140,74 @@ ul{
     font-weight: bolder;
   
   }
-    
-    
+  
 
+  .productos{
+    
+    display: grid;
+    padding: 20px;
+    max-width: 1200px;
+    justify-content: center;
+    margin: 20px;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 250px));
+  }
+ 
+
+  .items {
+    background-color: rgb(255, 255, 255);
+    border: solid thin rgb(247, 172, 75);
+    border-radius: 5px;
+    text-align: center;
+  }
+
+  .items img{
+    width: 200px;
+    height: 200px;
+    padding: 15px;
+  }
+
+
+  .información button{
+    padding: 5px;
+    width: 90%;
+    background-color: rgba(218, 150, 68, 0.795);
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+
+  .información button:hover{
+    background-color: rgba(37, 114, 49, 0.514);
+
+  }
+  .subir {
+    height: 40px;
+    width: 40px;
+    position: fixed;
+    left: 40PX;
+    bottom: 20px;
+    text-align: center;
+    line-height: 40px;
+    box-shadow: 0 0 5px #636363;
+    background-color: rgba(247, 192, 12, 0.466);
+    border-radius: 20px;
+  }
+  .subir:hover {
+    background-color: rgba(37, 114, 49, 0.5);
+    transform: scale(1.1);
+  }
+
+  @media (max-width: 768px) {
+    .navbar-toggler {
+      display: block !important;
+    }
+  }
+  @media (min-width: 768px) {
+    header {
+      text-align: center;
+    }
+  }
   footer {
     color: rgb(37, 114, 48);
     margin: 0px;
@@ -79,6 +217,7 @@ ul{
     letter-spacing: 3px;
     line-height: 30px;
     font-weight: bolder;
+    text-align: center;
   }
   
   

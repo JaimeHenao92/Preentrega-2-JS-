@@ -1,59 +1,205 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+ <link rel="stylesheet" href="css/estilos.css">
+ <script src="https://kit.fontawesome.com/7798baf011.js" crossorigin="anonymous"></script>
+   
+  <script src="js/objetos.js"></script>
+  <script src="js/index.js" defer></script>
+ 
+  <script src="js/arrays.js" defer></script>
   
-    <link rel="stylesheet" href="css/estilos.css">
-    <title>Preentrega 2 de JS por Jaime Henao</title>
-</head>
-<body>
-    <script src="js/index.js"></script>
-    <script src="js/objetos.js"></script>
-    <script src="js/arrays.js"></script>
 
+   <title>Preentrega de JS por Jaime Henao</title>
+</head>
+ <body>
+   
+    
+    
     <header>
       
         <a href="index.html" class="logo">
          <img class="logo" src="imagenes/Logo.png"alt="logo">
-        </a>
+        </a> 
+        
+        
+         <nav class="navbar navbar-expand-lg Nav">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="./html/comprar.html">Comprar</a></li>
+                    
+                </ul>   
+         </nav>
+    <div>
+        <a href="./html/carrito.html" id="logo-carrito"><img src="imagenes/carrito1.png" alt="carrito de compras">
+        <span id="cuenta-carrito">0</span>
+    </a>
+    </div>
 
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="./html/comprar.html">Comprar</a></li>
-            <li><a href="./html/precios.html">Precios</a></li>
-        </ul>
-     </header>
+    </header>
+  
+  <main>
+     <h1 data-atributo="titulo" id ="titulo">Productos</h1>
     
-
-     <h1>Productos</h1>
-    
-     <h2>Pollo Congelado</h2>
      <ol start="1">
-         <li>Alitas Finas Hierbas 800gr</li>
-         <li>Alitas Picantes 800gr</li>
-         <li>Alitas Bbq Grande 800gr</li>
-         <li>Arepollo 5ud</li>
-         <li>Chuzo Bucanero x10</li>
-         <li>Consomé 500gr</li>
-         <li>Corazones 500gr</li>
-     </ol>
-     
-     <h2>Pollo Refrigerado</h2>
-     <ol start="8">
-         <li>Alas Campesinas</li>
-         <li>Contramuslo</li>
-         <li>Muslo</li>
-         <li>Pechuga</li>
-     </ol>
+
+      <section id="containerProductos"></section>
+            <h2>Pollo Congelado</h2>
+            <div class="productos">
+
+                <div class="items">
+                   <div> <img src="imagenes/Alas Finas Hiervas.png" alt="Alitas Finas Hierbas"></div>
+                    <div class="información">
+                        <h3>Alitas Finas Hierbas 800gr</h3>
+                        <div class="precio">
+                            <p>$17000</p>
+                        </div>
+                        <button class="agregar">Agregar al carrito</button>
+                    </div>
+                
+                </div>
+                <div class="items">
+                    <img src="imagenes/Alas Picantes.png" alt="Alitas Picantes">
+                    <div class="información">
+                        <h3>Alitas Picantes 800gr</h3>
+                        <div class="precio">
+                            <p>$17000</p>
+                        </div>
+                        <button class="agregar">Agregar al carrito</button>
+                    </div>
+                
+                </div>
+                <div class="items">
+                    <img src="imagenes/Alas BBQ.png" alt="Alitas Bbq">
+                    <div class="información">
+                        <h3>Alitas Finas Bbq 800gr</h3>
+                        <div class="precio">
+                            <p>$17000</p>
+                        </div>
+                        <button class="agregar">Agregar al carrito</button>
+                    </div>
+                
+                </div>
+                <div class="items">
+                    <img src="imagenes/Arepollo.png" alt="Arepollo">
+                    <div class="información">
+                        <h3>Arepollo 5ud</h3>
+                        <div class="precio">
+                            <p>$17000</p>
+                        </div>
+                        <button class="agregar">Agregar al carrito</button>
+                    </div>
+                
+                </div>
+                <div class="items">
+                    <img src="imagenes/Chuzo Bucanero.png" alt="Chuzo Bucanero x10">
+                    <div class="información">
+                        <h3>Chuzo Bucanero x10</h3>
+                        <div class="precio">
+                            <p>$17000</p>
+                        </div>
+                        <button class="agregar">Agregar al carrito</button>
+                    </div>
+                
+                </div>
+                <div class="items">
+                    <img src="imagenes/Consome.png" alt="Consomé 500gr">
+                    <div class="información">
+                        <h3>Consomé 500gr</h3>
+                        <div class="precio">
+                            <p>$17000</p>
+                        </div>
+                        <button class="agregar">Agregar al carrito</button>
+                    </div>
+                
+                </div>
+                <div class="items">
+                    <img src="imagenes/Corazones.png" alt="Corazones 500gr">
+                    <div class="información">
+                        <h3>Corazones 500gr</h3>
+                        <div class="precio">
+                            <p>$17000</p>
+                        </div>
+                        <button class="agregar">Agregar al carrito</button>
+                    </div>
+                
+                </div>
+                
+             
+             <h2>Pollo Refrigerado</h2>
+             
+
+                <div class="items">
+                     <img src="imagenes/Ala Campesina.png" alt="Alas Campesinas">
+                     <div class="información">
+                     <h3>Alas Campesinas</h3>
+                     <div class="precio">
+                        <p>$17000</p>
+                     </div>
+                     <button class="agregar">Agregar al carrito</button>
+                </div>
+            
+            </div>
+                <div class="items">
+                     <img src="imagenes/Contramuslo.png" alt="Contramuslo">
+                     <div class="información">
+                     <h3>Contramuslo</h3>
+                     <div class="precio">
+                        <p>$17000</p>
+                     </div>
+                     <button class="agregar">Agregar al carrito</button>
+                </div>
+            
+            </div>
+                <div class="items">
+                     <img src="imagenes/Muslo.png" alt="Muslo">
+                     <div class="información">
+                     <h3>Muslo</h3>
+                     <div class="precio">
+                        <p>$17000</p>
+                     </div>
+                     <button class="agregar">Agregar al carrito</button>
+                </div>
+            
+            </div>
+                <div class="items">
+                     <img src="imagenes/Pechuga.png" alt="Pechuga">
+                     <div class="información">
+                     <h3>Pechuga</h3>
+                     <div class="precio">
+                        <p>$17000</p>
+                     </div>
+                     <button class="agregar">Agregar al carrito</button>
+                </div>
+            
+            </div>
+             </div>
+
+        </div>
+
+</main>
+    
      <footer>
         <p>"InnPollo, donde el buen gusto y la frescura se encuentran en cada bocado."</p>
         
   
        </footer>
      
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
- 
+       <a href="#" class="subir">
+          <i class="fa-solid fa-angle-up"></i>
+       </a>
+      <script src="js/dom.js"></script>
     
 </body>
 </html>

@@ -1,42 +1,71 @@
-
-
-function Producto(codigo, nombre, marca, precio, stock) {
-    this.codigo = codigo
-    this.nombre = nombre
-    this.marca = marca
-    this.precio = precio
-    this.stock = stock
-    this.descontarstock = function(unidades) {
-        let StockActual = this.stock - unidades
-        this.stock = StockActual
-        return StockActual
-        
+const pollo = [
+    {
+        id:1,
+        nombre:"Alitas Finas Hiervas 800gr",
+        img: "imagenes/Alas Finas Hiervas.png",
+        precio:17000,
+        stock:10
+    },
+    {
+        id:2,
+        nombre:"Alitas Picantes 800gr",
+        precio:17000,
+        stock:10
+    },
+    {
+        id:3,
+        nombre:"Alitas Bbq 800gr",
+        precio:17000,
+        stock:10
+    },
+    {
+        id:4,
+        nombre:"Arepollo 5ud",
+        precio:15000,
+        stock:10
+    },
+    {
+        id:5,
+        nombre:"Chuzo Bucanero x10",
+        precio:57000,
+        stock:10
+    },
+    {
+        id:6,
+        nombre:"Consomé 500gr",
+        precio:8000,
+        stock:15
+    },
+    {
+        id:7,
+        nombre: "Corazones 500gr",
+        precio:8000,
+        stock:10
+    },
+    {
+        id:8,
+        nombre:"Alas campesinas libra",
+        precio:6000,
+        stock:100
+    },
+    {
+        id:9,
+        nombre:"Contramuslo Libra",
+        precio:7000,
+        stock:90
+    },
+    {
+        id:10,
+        nombre:"Muslo Libra",
+        precio:7500,
+        stock:110
+    },
+    {
+        id:11,
+        nombre:"Pechuga libra",
+        precio:9000,
+        stock:150
     }
-    
-  
-    
-}
-
-const producto1 = new Producto(1, "Alitas Finas Hiervas 800gr", "Bucanero", 17000, 10)
-
-const producto2 = new Producto(2, "Alitas Picantes 800gr", "Bucanero", 17000, 10)
-
-const producto3 = new Producto(3, "Alitas Bbq Grande 800gr", "Bucanero", 17000, 10)
-
-const producto4 = new Producto(4, "Arepollo 5ud", "Pachito el Chef", 15000, 15)
-
-const producto5 = new Producto(5, "Chuzo Bucanero x10", "Bucanero", 57000, 20)
-
-const producto6 = new Producto(6, "Consomé 500gr", "Bucanero", 8000, 15)
-
-const producto7 = new Producto(7, "Corazones 500gr", "Bucanero", 8000, 10)
-
-const producto8 = new Producto(8, "Alas campesinas libra", "Bucanero", 6000, 60 )
-
-const producto9 = new Producto(9, "Contramuslo Libra", "Bucanero", 7500, 70 )
-
-const producto10 = new Producto(10, "Muslo Libra", "Bucanero", 7500, 55 )
-
-const producto11 = new Producto(11, "Pechuga libra", "Bucanero", 9000, 120 )
+]
 
 
